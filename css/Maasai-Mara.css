@@ -1,0 +1,125 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#mm1 {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    z-index: -1;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(135deg);
+    margin-left: 1%;
+}
+
+a {
+    text-decoration:none; 
+    color:black;
+}
+
+a:hover {
+    text-decoration:underline;
+    font-size:xx-large;
+}
+
+p {
+    font-size: x-large;
+    font-weight: bold;
+} 
+
+#booking {
+    position: absolute;
+    top: 135%;
+}
+
+#booking h2 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+#booking p {
+    font-size:large;
+    font-weight:400;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#booking h3 {
+    text-align: center;
+    font-size: x-large;
+}
+
+form {
+    margin-left: 40%;
+    font-size: larger;
+}
+
+label {
+    margin-left: -40%;
+}
+
+input, #Number {
+    margin-left: 30%;
+    margin-top:-1%;
+    display:flex;
+    vertical-align:baseline;
+    border: 2px solid black;
+}
+
+#Number {
+    font-size: large;
+    background-color: white;
+}
+
+input {
+    outline: none;
+    font-size: large;
+}
+
+#submit {
+    font-size: larger;
+    background-color: #54504A;
+    margin-left: 5%;
+    color: white;
+    padding: 2%;
+    border: none;
+    border-radius: 30px;
+    width: 30%;
+}
+
+@media screen and (max-width:990px) {
+    #booking {
+        position: absolute;
+        top: 95%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    #booking {
+        position: absolute;
+        top: 45%;
+    }
+
+    input, #Number {
+        margin-top: 1%;
+    }
+
+    label {
+        margin-left: -60%;
+    }
+
+    input {
+        font-size: medium;
+    }
+
+    #submit {
+        width: 50%;
+    }
+}

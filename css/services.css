@@ -1,0 +1,75 @@
+#main {
+    position: absolute;
+    left: 0%;
+    top: 20%;
+    width:100%;
+    height: auto;
+    background-color:  rgba(84,80,74,1);
+}
+
+h2 {
+    color: white;
+    text-align:center;
+    margin-top: 5%;
+}
+
+.accordionSection {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 2%;
+    width: 60%;
+    font-size: 1.5em;
+    margin-left: 15%;
+    transition: 0.4s ease;
+}
+
+.accordionSection.active, .accordionSection:hover {
+    background-color: #BAB86C;
+	color:ffffff; 
+}
+
+.accordionSection::after {
+    content: '\002B';
+    color: black;
+    float: right;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.active::after {
+    content: '\2212';
+}
+
+.content {
+    display: none;
+	padding: 2%;
+	width: 50%;
+    background-color: white;
+    margin-left: 20%;
+    font-size: 1.5em;
+}
+
+.content a {
+    text-decoration: none;
+    color: black;
+    transition: 1s ease-out;
+}
+
+.content a:hover {
+    color: rgba(84,80,74,1);
+    text-decoration: underline;
+}
+
+footer {
+    position: absolute;
+    top: auto;
+    height: auto;
+    width: 100%;
+}
+
+@media screen and (max-width:500px) {
+    .content {
+        font-size: 1.2em;
+    }
+}

@@ -1,0 +1,161 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    overflow-x:hidden;
+}
+
+header {
+    position:absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 20%;
+    background-color: #BAB86C;
+}
+
+#lion {
+    position:absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 10%;
+}
+
+#sp {
+    position:absolute;
+    top: 15%;
+    left: 30%;
+}
+
+#Links {
+    position:absolute;
+    top: 35%;
+    right: 8%;
+    font-size: x-large;
+}
+
+#Links a{
+    text-decoration: none;
+    color:black;
+    padding: 8px 8px;
+}
+
+#Links a:hover{
+    color:white;
+}
+
+.dropdown {
+    position: relative;
+    display: none;
+}
+
+footer {
+    position: absolute;
+    left: 0%;
+    height: 30%;
+    width: 100%;
+    background: #BAB86C;
+    text-align: center;
+    font-size: larger;
+}
+
+footer a {
+    text-decoration: none;
+    color:black;
+    padding: 5%;
+}
+
+footer a:hover{
+    color:white;
+}
+
+@media screen and (max-width: 990px) {
+    #lion {
+        position:absolute;
+        left: 15%;
+        width: 15%;
+    }
+
+    .dropdown {
+        display: inline-block;
+    }
+
+    .dropbtn {
+        background-color:rgb(84,80,74);
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        margin-left: 40%;
+        margin-top: 80%;
+    }
+
+    .dropdown-content {
+        position: fixed;
+        left: 0%;
+        top: 0%;
+        background-color: rgb(84,80,74);
+        width: 0%;
+        height: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 3;
+        transition: 0.5s;
+        overflow-x: hidden;
+    }
+
+    .close {
+        margin-left: 80%;
+        font-size: x-large;
+        padding: 16px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        color: white;
+    }
+
+    .dropdown-content a {
+        color: white;
+        padding: 10% 10%;
+        text-decoration: none;
+        display: block;
+        font-size: larger;
+    }
+
+    .dropdown-content a:hover, .close:hover {
+        background-color: white;
+        color: rgb(84,80,74);
+    }
+
+    #Links {
+        display: none;
+    }
+
+    #sp {
+        width: 50%;
+        height: auto;
+        position:absolute;
+        top: 20%;
+        left: 40%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #lion {
+        width: 25%;
+        height: 80%;
+        left: 20%;
+        margin-top: 3%;
+    }
+
+    #sp {
+        width: 55%;
+        height: auto;
+        position:absolute;
+        top: 30%;
+        left: 45%;
+    }
+
+    .dropdown-content a {
+        padding: 20% 20%;
+    }
+}

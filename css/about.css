@@ -1,0 +1,89 @@
+#heading{
+    margin-top: 15%; 
+    font-size: xx-large; 
+    font-weight: 700; 
+    text-align:center;
+    animation: slideX 3s ease-out;
+}
+
+#rect1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 40%;
+    background-color: rgba(84,80,74,1);
+    color: white;
+    font-size: x-large;
+    border-radius: 20px 0px 0px 20px;
+    animation:slideX1 3s ease-out;
+}
+
+#rect1 p, #rect2 p {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10%;
+}
+
+#rect2 {
+    position: absolute;
+    top: 95%;
+    left: 0%;
+    width: 50%;
+    height: 40%;
+    background-color: rgba(84,80,74,1);
+    color: white;
+    font-size: x-large;
+    border-radius: 0px 20px 20px 0px;
+    animation:slideX 3s ease-out;
+}
+
+@keyframes slideX{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideX1{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+footer {
+    position: absolute;
+    top: 150%;
+}
+
+@media screen and (max-width: 990px) {
+    #heading{
+        margin-top: 25%; 
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #heading{
+        margin-top: 45%; 
+    }
+
+    #rect1 {
+        height: 70%;
+    }
+
+    #rect2 {
+        height: 55%;
+        position: absolute;
+        top: 125%;
+    }
+
+    footer {
+        position: absolute;
+        top: 200%;
+    }
+}
